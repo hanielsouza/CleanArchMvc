@@ -28,6 +28,7 @@ namespace CleanArchMvc.Infra.IoC
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
 
+            //redireciona o usuário para a tela de login caso não tenha acesso
             services.ConfigureApplicationCookie(options =>
                 options.AccessDeniedPath = "/Account/Login");
 
