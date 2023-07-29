@@ -77,7 +77,7 @@ namespace CleanArchMvc.WebUI.Controllers
             return View(productDto);
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles ="Admin")]
         [HttpGet()]
         public async Task<IActionResult> Delete(int? id)
         {

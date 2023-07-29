@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 
 namespace CleanArchMvc.Domain.Account
 {
@@ -13,5 +9,6 @@ namespace CleanArchMvc.Domain.Account
         Task<bool> RegisterUser(string email, string password);
 
         Task Logout();
+
     }
 }
